@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WorkPlete</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="width: 370px; height: 400px">
+        <img src="images/banner.png" class="rounded" alt="workplete banner" width="100%">
+        <!-- <div class="input-group input-group-sm pb-1">
+            <select id="titles" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+            </select>
+            <button class="btn btn-outline-secondary" type="button" id="fillFormButton">Fill Form</button>
+        </div> -->
+        <hr>
+        <ul class="nav nav-pills nav-justified mt-1 mb-3" id="pills-tab" role="tablist" display="flex";>
+            <li class="first-tab" role="presentation" flex="1.25">
+                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+                    type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled
+                    style="font-size: 0.85rem;">Add Data:</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+                    style="font-size: 0.8rem;">Text</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"
+                    style="font-size: 0.8rem;">File</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+                    type="button" role="tab" aria-controls="pills-disabled" aria-selected="false"
+                    style="font-size: 0.8rem;">Web</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <!-- <div class="input-group input-group-sm mb-2">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="font-size: 0.8rem;">Title</span>
+                    <input type="text" class="form-control" id="title", placeholder="A custom title"
+                        aria-label="title" aria-describedby="inputGroup-sizing-sm" style="font-size: 0.8rem;"></input>
+                </div> -->
+                <div class="input-group input-group-sm">
+                    <textarea id="message" class="form-control has-fixed-size" aria-label="With textarea"
+                        placeholder="Enter text data here"
+                        style="height: 120px; overflow: auto; width: 100%; resize: none; font-size: 0.75rem;">Hi there, I am Abdullah Meda. I am from UAE. You can contact me via +971509565209, I work as Persist Ventures and my work email is am2024@pv.com. Moreover, this webpage was referred to me by a good friend named Jack Jay</textarea>
+                </div>
+                <div class="form-group text-center py-1">
+                    <button type="button" class="some_button btn btn-block btn-primary mt-1 mb-1" id="fillFormButton"
+                        style="width: 100%; font-size: 0.75rem;">Fill Form</button>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0" style="font-size: 0.75rem;">
+                <input type="file" id="input-file" accept=".pdf">
+                <div class="form-group text-center py-1">
+                    <button type="button" class="some_button btn btn-block btn-primary mt-1 mb-1" id="usePdfButton"
+                        style="width: 100%; font-size: 0.75rem;">Use PDF file</button>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                tabindex="0" style="font-size: 0.75rem;">To be implemented in future iterations!</div>
+        </div>
+    </div>
+</body>
+
+<script src="popup.js"></script>
+<script src="js/pdf.js"></script>
+<script src="js/pdf.worker.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+
+</html>
